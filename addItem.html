@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+Author: Courtney Ardis 
+Project: Web App Part 2
+Term: 1206
+-->
+<html>
+	<head>
+		<meta charset ="utf-8" />
+		<meta name="description" content="Keep track of your comic book collection" />
+		<meta name="keywords" content="comic books, list, keep track, add comics, store comic titles" />
+		<meta name="robots" content="noindex, nofollow" />
+		<meta name="viewport" content="user-scalable=no, width=device-width, target-densitydpi=device-dpi" />
+		<title>Add Comic to Collection</title>
+	</head>
+	<body>
+		<h1>Add Comic to Index</h1>
+		<!-- Add Comic Form -->
+		<form action="#" method="post">
+			<fieldset>
+				<legend>Comic Information</legend>
+					<ul>
+						<!-- Comic Information Inputs -->
+						<li><label for="comicTitle">Title of Comic:</label><input type="text" id="comicTitle" /></li>
+						<li><label for="seriesTitle">Title of Series:</label><input type="text" id="seriesTitle" /></li>
+						<li><label for="issueNum">Issue Number:</label><input type="text" id="issueNum" /></li>
+						<li><label for="dateReleased">Date Released:</label><input type="date" id="dateReleased" /></li>
+						<li><label for="publisher">Publisher:</label><input type="text" id="publisher" /></li>
+						<li><label for="rateIssue">Rate Issue (0-5 Scale):</label><input type="range" id="rateIssue" min="0" max="5" /></li>
+						<li>
+							<!-- Genre Dropdown Menu -->
+							<label for="genre">Select Genre:</label>
+							<select id="genre">
+								<option>Superhero</option>
+								<option>Horror</option>
+								<option>Sci-fi</option>
+								<option>Western</option>
+								<option>Romance</option>
+								<option>Pulp</option>
+							</select>
+						</li>
+						<li>Illustration Style:
+							<ul>
+								<!-- Illustration Radio Buttons -->
+								<li><input type="radio" id="fullColor" value="Full Color" name="style" /><label for="fullColor">Full Color</label></li>
+								<li><input type="radio" id="blackWhite" value="Black &amp; White" name="style" /><label for="blackWhite">Black &amp; White</label></li>
+								<li><input type="radio" id="combination" value="Combination" name="style" /><label for="combination">Combination</label></li>
+							</ul>
+						</li>
+						<!-- Comment Textarea -->
+						<li><label for="comments">Comments:</label><textarea id="comments"></textarea></li>
+					</ul>			
+			</fieldset>
+			<!-- Submit Elements -->			
+			<input type="hidden" name="country" value="USA" />
+			<input type="button" value="Add Comic" name="submit" />						
+			<footer>
+				<nav>
+					<!-- Local Storage Nav Elements -->
+					<a href="#" title="clearData">Clear Data</a>
+					<a href="#" title="displayData">Display Data</a>
+				</nav>
+			</footer>
+		</form>
+	</body>
+</html>

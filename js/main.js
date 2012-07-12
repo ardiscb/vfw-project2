@@ -66,7 +66,7 @@ window.addEventListener("DOMContentLoaded", function() {
 		}
 	}
 
-	//Function that stores the form fields into Local Storage
+	//Function that stores the form fields into Local Storage with a key and value
 	function storeData(){
 		var id    				= Math.floor(Math.random()*100000000001);
 		//Gather up all our form field values and store in an object
